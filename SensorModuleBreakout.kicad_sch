@@ -1807,6 +1807,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -5097,6 +5106,10 @@
 		(uuid "fe2f3a27-45ac-4408-802a-96d4a1292b91")
 	)
 	(no_connect
+		(at 245.11 43.18)
+		(uuid "10c72c7c-3131-4a64-b22c-914e84187018")
+	)
+	(no_connect
 		(at 66.04 59.69)
 		(uuid "1a5251e2-4f96-4215-a79e-0f7fccb6667c")
 	)
@@ -5107,6 +5120,10 @@
 	(no_connect
 		(at 149.86 100.33)
 		(uuid "8ce59bb9-10d3-4454-a9e4-fa8d0e69da49")
+	)
+	(no_connect
+		(at 66.04 92.71)
+		(uuid "b9489c49-0d13-45da-b3c9-705aef6e6d5c")
 	)
 	(no_connect
 		(at 66.04 69.85)
@@ -5193,16 +5210,6 @@
 			(type default)
 		)
 		(uuid "12665941-596d-4cee-9485-853e3f1d866d")
-	)
-	(wire
-		(pts
-			(xy 234.95 43.18) (xy 245.11 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12afc7ad-3180-417d-a1cb-960ccf5016b1")
 	)
 	(wire
 		(pts
@@ -7788,28 +7795,6 @@
 			)
 		)
 	)
-	(global_label "INT"
-		(shape input)
-		(at 66.04 92.71 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e0a1207d-c0fd-4b55-b0b4-8115eb7f9c09")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 60.1519 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "PB10"
 		(shape bidirectional)
 		(at 66.04 105.41 180)
@@ -9323,85 +9308,6 @@
 			(project "SensorModuleBreakout"
 				(path "/a7deaaf9-405c-4e0c-87a8-05fcee2b1cc8"
 					(reference "#PWR0105")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 137.16 144.78 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4f8b9d92-dce2-4fae-ad9f-69da26d9ad1f")
-		(property "Reference" "D1"
-			(at 140.97 145.0974 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED"
-			(at 140.97 147.6374 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 137.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 137.16 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLC" "C2286"
-			(at 137.16 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ca5e5b11-681e-420a-ba07-bc59cf6e161b")
-		)
-		(pin "2"
-			(uuid "f892ccea-9e6d-44ca-b54b-3baae4dcad1a")
-		)
-		(instances
-			(project "SensorModuleBreakout"
-				(path "/a7deaaf9-405c-4e0c-87a8-05fcee2b1cc8"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -11784,73 +11690,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 234.95 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d4d656be-37dc-469d-82a0-71475e665795")
-		(property "Reference" "#PWR0129"
-			(at 234.95 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 234.95 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 234.95 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 234.95 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 234.95 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "71604fba-5b20-4f2b-8535-4c769daf376e")
-		)
-		(instances
-			(project "SensorModuleBreakout"
-				(path "/a7deaaf9-405c-4e0c-87a8-05fcee2b1cc8"
-					(reference "#PWR0129")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 106.68 34.29 0)
 		(unit 1)
@@ -12349,6 +12188,85 @@
 			(project ""
 				(path "/a7deaaf9-405c-4e0c-87a8-05fcee2b1cc8"
 					(reference "U5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 137.16 144.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "edd20be2-3a1c-419e-9db7-2fd43ed9a032")
+		(property "Reference" "D1"
+			(at 140.97 145.0974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 140.97 147.6374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 137.16 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 137.16 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 137.16 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "87c21639-0df4-4463-833c-e3aad0b36f94")
+		)
+		(pin "2"
+			(uuid "9704c37b-9666-46d1-acd6-1754bbd8821f")
+		)
+		(instances
+			(project ""
+				(path "/a7deaaf9-405c-4e0c-87a8-05fcee2b1cc8"
+					(reference "D1")
 					(unit 1)
 				)
 			)
